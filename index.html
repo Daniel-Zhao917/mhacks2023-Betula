@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betula</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+  <script type="module" src="../index.js"></script>
+  <script type="module">import {register} from "../index.js"; window.register = register</script>  
+  <script type="module">import {login} from "../index.js"; window.login = login</script>  
+  <script type="module" src="../js/login2.js"></script>
+</head>
+
+<!-- LOGIN -->
+
+<body>
+  <div class="wrapper">
+    <div class="login-container">
+      <h2>Betula Login</h2>
+      <form>
+        <label for="lemail">Email:</label>
+        <input type="text" id="lemail" name="lemail" required>
+        <label for="lpassword">Password:</label>
+        <input type="password" id="lpassword" name="1password" required>
+        <div class="remember-forgot">
+          <label><input type="checkbox" id="rememberme"> Remember me</label>
+        </div>
+        <button type="button" id="loginButton">Login</button>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="register-container">
+      <h2>Betula Register</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="remember-forgot" style="margin-bottom: 10px">
+          <label><input type="checkbox" required> I agree to the terms & conditions</label>
+        </div>
+        <button type="button" id="registerButton">Register</button>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

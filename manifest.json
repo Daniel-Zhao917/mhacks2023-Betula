@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "author": ["Daniel", "Joseph"],
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "Betula"
+  },
+  "name": "Betula",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["website_blocker.js"]
+    }
+  ],
+  "icons": { "48": "/images/quill-and-ink.png", "128": "/images/quill-and-ink.png" },
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.netflix.com/*",
+    "https://www.crunchyroll.com/*",
+    "https://www.pinterest.com/*",
+    "https://www.instagram.com/*",
+    "https://discord.com/*",
+    "https://www.amazon.com/*",
+    "https://www.tumblr.com/*",
+    "https://www.tiktok.com/*",
+    "https://www.buzzfeed.com/*",
+    "https://www.reddit.com/*",
+    "https://wwww.twitch.tv/*",
+    "https://www.disneyplus.com/*",
+    "https://www.hulu.com/*"
+  ]
+}

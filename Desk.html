@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type='module' src="timer.js"></script>
+    <script type='module' src="Desk.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betula Desk</title>
+    <link rel="stylesheet" href="../css/desk.css">
+</head>
+
+<body>
+    <button id="summon-button">Go To Summon</button>
+    <div class="quote-container">
+        <blockquote class="giant-quote">
+            "Education breeds confidence. Confidence breeds hope. Hope breeds peace."
+            <cite>- Confucius</cite>
+        </blockquote>
+    </div>
+    <div id="stopwatch">00:00:00</div>
+    <div class="button-container">
+        <button id="startStopwatch">Start</button>
+        <button id="stopStopwatch">Stop</button>
+        <button id="resetStopwatch">Reset</button>
+    </div>
+    <div class="button-group">
+        <button id="desk-equipment-button" class="top-button">Desk Equipment</button>
+        <button id="coin-amount-button" class="top-button">Coin Amount</button>
+    </div>
+<div id="desk-equipment-popup" class="popup">
+    <h2>Your Items</h2>
+    <div id="items-container">
+
+    </div>
+    <button id="close-items-button">Close</button>
+</div>
+<div id="coin-amount-popup" class="popup">
+    <h2>Coins</h2>
+    <p id="coin-count-display"></p>
+    <button id="close-coin-button">Close</button>
+</div>
+</body>
+</html>
